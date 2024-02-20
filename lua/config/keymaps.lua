@@ -24,7 +24,7 @@ keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
 
 -- Split Window
 keymap.set("n", "ss", ":split<Return>", opts)
-keymap.set("n", "sv", ":vplit<Return>", opts)
+keymap.set("n", "sv", ":vsplit<Return>", opts)
 
 -- Move Window
 keymap.set("n", "sh", "<C-w>h")
@@ -37,3 +37,12 @@ keymap.set("n", "<C-w><left>", "<C-w><")
 keymap.set("n", "<C-w><right>", "<C-w>>")
 keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
+
+-- Diagnostics
+keymap.set("n", "<C-j>",function()
+  vim.diagnostic.goto_next()
+end, opts)
+
+keymap.set("n", "<C-k>",function()
+  vim.diagnostic.goto_prev()
+end, opts)
