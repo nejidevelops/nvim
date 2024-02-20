@@ -21,3 +21,19 @@ keymap.set("n", "<C-m>", "<C-i>", opts)
 keymap.set("n", "te", "tabedit", opts)
 keymap.set("n", "<tab>", ":tabnext<Return>", opts)
 keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
+
+-- Split Window
+keymap.set("n", "ss", ":split<Return>", opts)
+keymap.set("n", "sv", ":vplit<Return>", opts)
+
+-- Move Window
+keymap.set("n", "sh", "<C-w>h")
+keymap.set("n", "sk", "<C-w>k")
+keymap.set("n", "sj", "<C-w>j")
+keymap.set("N", "sl", "<C-w>l")
+
+-- Resize window
+keymap.set("n", "<C-w><left>", "<C-w><")
+keymap.set("n", "<C-w><right>", "<C-w>>")
+keymap.set("n", "<C-w><up>", "<C-w>+")
+keymap.set("n", "<C-w><down>", "<C-w>-")
