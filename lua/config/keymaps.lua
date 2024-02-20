@@ -30,7 +30,7 @@ keymap.set("n", "sv", ":vsplit<Return>", opts)
 keymap.set("n", "sh", "<C-w>h")
 keymap.set("n", "sk", "<C-w>k")
 keymap.set("n", "sj", "<C-w>j")
-keymap.set("N", "sl", "<C-w>l")
+keymap.set("n", "sl", "<C-w>l")
 
 -- Resize window
 keymap.set("n", "<C-w><left>", "<C-w><")
@@ -39,10 +39,10 @@ keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
 
 -- Diagnostics
-keymap.set("n", "<C-j>",function()
+keymap.set("n", "<C-j>", function()
   vim.diagnostic.goto_next()
 end, opts)
 
-keymap.set("n", "<C-k>",function()
+keymap.set("n", "<C-k>", function()
   vim.diagnostic.goto_prev()
 end, opts)
